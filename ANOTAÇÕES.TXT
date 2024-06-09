@@ -1,0 +1,79 @@
+
+# REGRAS #
+
+1 - Variáveis sempre começam com $.
+2 - Case sensitive.
+3 - Existem palavras reservadas.
+
+# Recomendações para criação de variáveis #
+
+1 - Nomes claros    
+2 - Variáveis, use letras minusculas
+3 - Constantes, use letras maiusculas
+4 - camelCase para variáveis = $nomeCompleto
+5 - SNAKE_CASE para constantes = NOME_COMPLETO_CLIENTE ou nome_completo_cliente
+
+TIPOS PRIMITIVOS:
+
+Escalares
+Compostos
+Especiais
+
+
+Tipos escalares:
+
+STRING = Texto
+INT = Números inteiros
+FLOAT = Números com casas decimais
+BOLLEANO = False or True, valor lógico
+
+Tipos compostos: 
+
+ARRAY = Conjunto de
+OBJETO = 
+
+Tipos especiais:
+
+NULL = 
+RESOURCE = 
+CALLABE = 
+MIXED = 
+
+Tipos de Strings:
+
+Double Quoted: Strings formadas por aspas duplas, EXISTE INTERPRETAÇÃO DO CONTEÚDO, ou seja, consegue interpretar código Unicode:
+
+
+"PHP\u{1F418}" = PHP + emoji de elefante será exibido
+'PHP\u{1F418}'= PHP\u{1F418}
+
+outro exemplo: 
+
+$nome = "Brunno";
+
+echo "meu nome é $nome" = meu nome é Brunno
+echo 'meu nome é $nome' = meu nome é $nome
+
+Single Quoted: Strings formadas por aspas únicas, não interpreta conteúdo
+
+HereDoc: 
+
+Sequencia de escape (SEMPRE COM ASPAS DUPLAS): 
+\n nova linha
+\t tabulação horizontal (tab)
+\\ barra invertida
+\$ sinal de cifrão
+\u{} emoticon
+
+Essas tabulações servem somente para a saída do código em PHP, não em HTML
+
+Ordem de precedências da maior para menor:
+
+
+() - Não é operador, é um modificador de preferência, logo o que estiver dentro deve ser resolvido antes!
+** - Potenciação
+* e / (Multiplcicação, divisão) e também % (resto de divisão, módulo)
++ e -
+
+Caso estejam na mesma ordem de preferência, resolve da direita pra esquerda!
+
