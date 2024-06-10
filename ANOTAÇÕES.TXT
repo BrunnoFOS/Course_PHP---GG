@@ -72,8 +72,8 @@ Ordem de precedências da maior para menor:
 
 () - Não é operador, é um modificador de preferência, logo o que estiver dentro deve ser resolvido antes!
 ** - Potenciação
-* e / (Multiplcicação, divisão) e também % (resto de divisão, módulo)
-+ e -
+*, / e % Multiplcicação, divisão e módulo
++ e - Adição e Subtração
 
 Caso estejam na mesma ordem de preferência, resolve da direita pra esquerda!
 
