@@ -1,7 +1,4 @@
-# PHP Course by Gustavo Guanabara | Curso de PHP do Gustavo Guanabara
+#PHP - Exercicies
 
-Desenvolvi esse repositório para aqui guardar os exercícios feitos em curso e além disso, minhas anotações!
+Repository created for PHP notes and PHP exercicies.
 
-Avaliação de curso:
-
-Comentários sobre o curso:
