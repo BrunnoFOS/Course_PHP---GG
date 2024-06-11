@@ -54,7 +54,7 @@ $nome = "Brunno";
 echo "meu nome é $nome" = meu nome é Brunno
 echo 'meu nome é $nome' = meu nome é $nome
 
-Single Quoted: Strings formadas por aspas únicas, não interpreta conteúdo
+Single Quoted: Strings formadas por aspas únicas, não interpreta conteúdo, ou seja, não interpretam variavéis, por exemplo!
 
 HereDoc: 
 
@@ -76,4 +76,14 @@ Ordem de precedências da maior para menor:
 + e - Adição e Subtração
 
 Caso estejam na mesma ordem de preferência, resolve da direita pra esquerda!
+
+#STRINGS - Functions | Funções
+
+- echo strtoupper() - Todo conteúdo da String sairá maiusculo. | All string content output uppercase.
+
+-  echo strtodown() - Todo o conteúdo da string sairá minisculo | All string content output downcase.
+
+- echo substr($frase, 0, 20) - A saída de conteúdo da string será limitada, ou seja será exibido da primeira a 20° letra da string | The output string content be limited, 
+
+#NUMBER - Functions| Funções
 
