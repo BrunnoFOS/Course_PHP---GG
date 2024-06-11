@@ -20,16 +20,11 @@
         $convert = $numero * $cotacao;
         $convertFormatado = number_format($convert, 2);
 
-        echo "<p>$numero em dólares é exatamente <strong>$convertFormatado</strong></p>";  
+        echo "<p>$numero em dólares é exatamente <strong>$convertFormatado</strong></p>";
         echo "<p>Baseando-se na cotação de $cotacao informada diretamente no código</p>";
         ?>
-        <button onclick="voltar()">Voltar</button>
+        <button onclick="window.history.back()">Voltar</button>
     </main>
-    <script>
-        function voltar() {
-            window.history.back();
-        }
-    </script>
 </body>
 
 </html>
