@@ -12,8 +12,9 @@
     <main>
         <h1>Conversor de Moedas 2.0</h1>
         <form action="convert.php" method="get">
-            <label for="numeroEntrada">Insira o número que deseja converter</label>
-            <input type="number" name="numeroEntrada">
+            <label for="numeroEntrada">Insira o número que deseja converter para dólar:
+            </label>
+            <input type="number" name="numeroEntrada" step="any" required>
             <button type="submit">Converter</button>
         </form>
     </main>
