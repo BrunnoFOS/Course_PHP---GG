@@ -87,3 +87,14 @@ Caso estejam na mesma ordem de preferência, resolve da direita pra esquerda!
 
 #NUMBER - Functions| Funções
 
+#SuperGlobals - PHP
+
+$_GET -
+$_POST -
+$_REQUEST - 
+$_SERVER - 
+$_SESSION - 
+$_FILES - 
+$_COOKIES - 
+$_ENV - 
+$GLOBALS - 
