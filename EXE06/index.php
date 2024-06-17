@@ -11,8 +11,8 @@
 <body>
     <main>
         <?php 
-        $number1 = $_POST['n1'];
-        $number2 = $_POST['n2'];
+        $number1 = $_POST['n1'] ?? 0;
+        $number2 = $_POST['n2'] ?? 0;
         ?>
         <h1>Soma de 2 números.</h1>
         <form action="" method="post">
