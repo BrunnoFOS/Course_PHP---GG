@@ -25,9 +25,9 @@
             Anatomia de uma divisão
         </h1>
         <form action="" method="post"><label for="dividendo">Dividendo:</label>
-            <input type="number" name="dividendo" value="<?= $dividendo ?>">
+            <input type="number" name="dividendo" required value="<?= $dividendo ?>">
             <label for="divisor">Divisor:</label>
-            <input type="number" name="divisor" value="<?= $divisor ?>">
+            <input type="number" name="divisor" required value="<?= $divisor ?>">
             <button type="submit">Dividir</button>
         </form>
     </main>
