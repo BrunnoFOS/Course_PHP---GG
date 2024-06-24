@@ -40,23 +40,23 @@
             $medPondSoma = $peso1 + $peso2;
             $medPond = number_format($medSimpSoma / $medPondSoma, 1, ".");
 
-            if  ($num1 != 0 && $num2 != 0 && $peso1 == 1 && $peso2 == 1) {
+            if ($num1 != 0 && $num1 < 10 && $num2 != 0 && $num2 < 10 && $peso1 == 1 && $peso2 == 1) {
                 echo "Analisando os valores N1 = $num1, N2 = $num2. Temos que:";
-                echo"
-            <ul>
-            <li>A <strong>média simples</strong> entre os valores é igual a $medSimp</li>
-            </ul>";
-            } elseif ($num1 != 0 && $num2 != 0 && $peso1 || $peso2 > 1) {
+                echo "
+                <ul>
+                    <li>A <strong>média simples</strong> entre os valores é igual a $medSimp</li>
+                </ul>";
+            } elseif ($num1 != 0 && $num1 < 10 && $num2 != 0 && $num2 < 10 && ($peso1 > 1 || $peso2 > 1)) {
                 echo "Analisando os valores N1 = $num1, N2 = $num2. Temos que:";
-                echo"
-            <ul>
-            <li>A <strong>média ponderada</strong> entre os valores é igual a $medPond</li>
-            </ul>";
+                echo "
+                <ul>
+                    <li>A <strong>média ponderada</strong> entre os valores é igual a $medPond</li>
+                </ul>";
             } elseif ($num1 == 0 && $num2 == 0 && $peso1 == 1 && $peso2 == 1){
-                print('<h4>Aqui será exibido o resultado de sua média</h4>');
+                echo '<h4>Aqui será exibido o resultado de sua média</h4>';
             } else {
-                print('Digite valores válidos.');
-            }
+                echo 'Digite valores válidos, eles não podem ter peso 0 ou notas maiores que 10.';
+            }            
             ?> 
         </h2>
         <table>
