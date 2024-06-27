@@ -10,27 +10,38 @@
 
 <body>
     <main>
+        <?php
+        $preco = $_POST['precoInput'] ?? 0;
+        $ajusteRange = $_POST['ajusteRange'] ?? 0;
+        $aumento = $preco + $preco / 100 * $ajusteRange;
+        ?>
         <h1>Reajustador de Preços</h1>
         <form action="" method="post">
-            <label for="preço">Preço do produto(R$)</label>
-            <input type="number" name="preçoInput" require="required">
-            <label for="Ajuste">Qual será o percentual de reajuste?</label>
-            <input type="range" name="ajusteRange" require="required" min="0" max="100">
+            <label for="preço">Preço do produto (R$)</label>
+            <input type="number" name="precoInput" required value="<?=$preco?>"> 
+            <label for="Ajuste">Qual será o percentual de reajuste? <strong><span id="porc"><?=$ajusteRange?>%</span></strong> </label>
+            <input type="range" name="ajusteRange" id="range" required value="<?=$ajusteRange?>">
+            <button type="submit">Calcular</button>
         </form>
-        <button type="submit">Calcular</button>
     </main>
     <section>
         <h1>Resultado do Reajuste</h1>
-        <p>
             <?php
-            $preco = $_POST['preçoInput'] ?? 1;
-            $aumento = $_POST['ajusteRange'] ?? 1;
-            $precoTotal = $preco + $preco / 100 * $aumento;
-
-            echo "O produto que custava $preco, com $ajusteRange de aumento vai passar a custar";
+            if ($preco == 0 || $ajusteRange == 0) {
+                echo "Insira o preço e o ajuste para calcular o reajuste";
+            } else {
+                echo "O produto que custava R$ " . number_format($preco, 2, ',', '.') . ", com $ajusteRange% de aumento vai passar a custar R$ " . number_format($aumento, 2, ',', '.');
+            }
             ?>
-        </p>
     </section>
 </body>
+<script>
+    let elementoPorc = document.getElementById('range');
+    elementoPorc.setAttribute('min', 0);
+    elementoPorc.setAttribute('max', 100);
+    elementoPorc.addEventListener('input', (event) => {
+        document.getElementById('porc').textContent = event.target.value + '%';
+    });
+</script>
 
 </html>
